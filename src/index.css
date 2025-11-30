@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@import url("./styles/reset.css");
+
+.container-custom{
+    width: 95%;
+    margin: 0 auto;
+}
