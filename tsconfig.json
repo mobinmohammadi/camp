@@ -1,7 +1,21 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "compilerOptions": {
+    "target": "ESNext",                     // نسخه خروجی جاوااسکریپت
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], 
+    "allowJs": true,                        // اجازه خواندن فایل‌های JS
+    "checkJs": false,                       // بررسی تایپ JS اختیاری
+    "jsx": "react-jsx",                     // پشتیبانی از TSX/JSX جدید
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,                         // فعال کردن strict type checking
+    "esModuleInterop": true,                // برای import/export سازگار
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                   // نادیده گرفتن بررسی type library ها
+    "baseUrl": "src",                       // راحتی در import فایل‌ها از src
+    "paths": {                              
+      "@/*": ["*"]                          // alias برای import از src
+    }
+  },
+  "include": ["src/**/*"],                  // همه فایل‌های src
+  "exclude": ["node_modules", "build"]     // عدم بررسی node_modules
 }

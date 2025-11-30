@@ -28,20 +28,20 @@ export default function MainNav() {
           <span>Booking</span>
         </NavLink>
 
-        <NavLink to="/dashboard">
+        <NavLink to="/cabins">
           <HiOutlineHomeModern className="w-6 h-6"  />
           <span>Cabins</span>
         </NavLink>
 
-        <NavLink to="/dashboard">
+        <NavLink to="/users">
           <HiOutlineUser className="w-6 h-6"  />
           <span>Users</span>
         </NavLink>
-        <NavLink to="/dashboard">
+        <NavLink to="/settings">
           <HiOutlineCog6Tooth className="w-6 h-6" />
           <span>Settings</span>
         </NavLink>
-         <NavLink to="/dashboard">
+         <NavLink to="/account">
           <HiOutlineCog6Tooth className="w-6 h-6"  />
           <span>Account</span>
         </NavLink>
